@@ -1,8 +1,8 @@
 import Button from "../UI/Button";
 import { LogoImage } from "../../assets";
 
-import styles from "./Navbar.module.css";
 
+import styles from "./Navbar.module.css";
 const Navbar = ({ onShowForm }) => {
   const showFormHandler = () => {
     onShowForm(true);
@@ -10,8 +10,8 @@ const Navbar = ({ onShowForm }) => {
 
   return (
     <header className={styles.navbar}>
-      <img src={LogoImage} className={styles.logo} alt="logo bookshelf" />
-      <Button title="Tambah Buku" variant="outline" onClick={showFormHandler} />
+      <img src={LogoImage} className={styles.logo} alt="book bookshelf" />
+      <Button title="Add Books" variant="outline" onClick={showFormHandler} />
     </header>
   );
 };

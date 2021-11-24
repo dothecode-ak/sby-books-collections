@@ -23,18 +23,18 @@ const BookItem = ({ data, onShowForm, onConfirmDelete }) => {
 
   return (
     <Card className={styles.book}>
-      <strong className={styles.title}>{data.title}</strong>
-      <p className={styles.author}>Penulis: {data.author}</p>
-      <p>Tahun: {data.year}</p>
+      <p>Book Name:<strong className={styles.title}> {data.title}</strong></p>
+      <p className={styles.author}>Author: {data.author}</p>
+      <p>Year: {data.year}</p>
       <div className={styles["button-group"]}>
         <Button
-          title="Ubah"
+          title="Change"
           variant="success"
           size="sm"
           onClick={showFormHandler}
         />
         <Button
-          title="Hapus"
+          title="Delete"
           variant="danger"
           size="sm"
           onClick={confirmDeleteHandler}

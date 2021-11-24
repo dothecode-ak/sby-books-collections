@@ -1,9 +1,7 @@
 import ReactDOM from "react-dom";
 import Card from "./Card";
 import Button from "./Button";
-
 import styles from "./AlertDeleteModal.module.css";
-
 const ModalOverlay = ({ title, author, id, onHide, onDelete }) => {
   const deleteHandler = () => {
     onDelete(id);
@@ -13,13 +11,12 @@ const ModalOverlay = ({ title, author, id, onHide, onDelete }) => {
   return (
     <Card className={styles.modal}>
       <p>
-        Yakin ingin menghapus buku dengan judul <strong>{title}</strong> yang
-        ditulis oleh <strong>{author}</strong>?
+      Are you sure you want to delete the book with the title <strong>{title}</strong>  <strong>{author}</strong>?
       </p>
       <div className={styles["button-group"]}>
-        <Button title="Batal" variant="primary" onClick={onHide} />
+        <Button title="Cancelled" variant="primary" onClick={onHide} />
         <Button
-          title="Ya Hapus"
+          title="Ok Delete"
           variant="outline-danger"
           onClick={deleteHandler}
         />

@@ -25,8 +25,8 @@ const BookList = ({ books, onShowForm, onDelete }) => {
     return (
       <Card className={styles.empty}>
         <img src={SadImage} alt="sad icon" />
-        <h3>Rak Buku Kosong</h3>
-        <p>Belum ada buku sama sekali, yuk tambah sekarang.</p>
+     <h1>Empty Bookshelf</h1>   
+<p>There are no books at all, let's add now.</p> 
       </Card>
     );
   }
@@ -42,7 +42,7 @@ const BookList = ({ books, onShowForm, onDelete }) => {
           onDelete={onDelete}
         />
       )}
-      <h3 className={styles.title}>Kumpulan Buku</h3>
+      <h3 className={styles.title}>Book Collection</h3>
       <div className={styles.books}>
         {books.map((book) => {
           return (

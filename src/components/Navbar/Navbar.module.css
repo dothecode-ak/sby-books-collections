@@ -1,19 +1,19 @@
 .navbar {
-  align-items: center;
-  background-color: #050505;
-  display: flex;
-  height: 80px;
-  justify-content: space-between;
-  padding: 0 50px;
-  width: 100%;
+    align-items: center;
+    background-color: #050505;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 50px;
+    width: 100%;
 }
 
 .logo {
-  height: 27px;
+    height: 65%;
 }
 
-@media screen and (max-width: 500px){
-  .navbar {
-    padding: 0 20px;
-  }
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 0 20px;
+    }
 }

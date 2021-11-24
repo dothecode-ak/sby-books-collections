@@ -53,11 +53,11 @@ const FormBook = ({ bookData, onShowForm, onSaveBook }) => {
   return (
     <Card className={styles.form}>
       <h3 className={styles.title}>
-        {bookData ? "Edit Buku" : "Tambah Buku Baru"}
+        {bookData ? "Edit Book" : "Add New Book"}
       </h3>
       <form autoComplete="off" onSubmit={saveBookHandler}>
         <div className={styles["form-group"]}>
-          <label htmlFor="title">Judul</label>
+          <label htmlFor="title">Title</label>
           <input
             type="text"
             id="title"
@@ -67,7 +67,7 @@ const FormBook = ({ bookData, onShowForm, onSaveBook }) => {
           />
         </div>
         <div className={styles["form-group"]}>
-          <label htmlFor="author">Penulis</label>
+          <label htmlFor="author">Author</label>
           <input
             type="text"
             id="author"
@@ -76,7 +76,7 @@ const FormBook = ({ bookData, onShowForm, onSaveBook }) => {
           />
         </div>
         <div className={styles["form-group"]}>
-          <label htmlFor="year">Tahun Terbit</label>
+          <label htmlFor="year">Year</label>
           <input
             type="text"
             id="year"
@@ -86,11 +86,11 @@ const FormBook = ({ bookData, onShowForm, onSaveBook }) => {
         </div>
         <div className={styles["button-group"]}>
           <Button
-            title={bookData ? "Ubah Buku" : "Masukkan Buku"}
+            title={bookData ? "Change Books" : "Enter a Book"}
             variant="primary"
             type="submit"
           />
-          <Button title="Batal" variant="danger" onClick={cancelHandler} />
+          <Button title="Cancel" variant="danger" onClick={cancelHandler} />
         </div>
       </form>
     </Card>
